@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Iframe from 'react-iframe'
 
 class Jemp extends Component {
     state = {
@@ -15,8 +16,10 @@ class Jemp extends Component {
         console.log(this.state.img)
         return (
             <div>
-                {/* <img src={this.state.img} id='playerLogo' /> */}
-                <iframe src="https://embed.radio.co/player/15a1a96.html" title="JEMP Radio" width="100%" allow="autoplay" />
+                <div align='center'>
+                    <Iframe url="https://embed.radio.co/player/15a1a96.html" id="iframe" title="JEMP Radio" width="450px"
+                        allow="autoplay" frameBorder='0' />
+                </div>
             </div>
 
         )

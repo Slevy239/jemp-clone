@@ -6,8 +6,8 @@ class Footer extends Component {
 
         return (
             <div>
-                JEMP Radio Clone 
-                Sam Levy 2020
+                JEMP Radio Clone <br></br>
+                Sam Levy © 2020
             </div>
 
         )
