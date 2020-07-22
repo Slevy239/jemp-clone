@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Iframe from 'react-iframe'
+import Iframe from 'react-iframe';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 class Jemp extends Component {
     state = {
@@ -16,10 +19,16 @@ class Jemp extends Component {
         console.log(this.state.img)
         return (
             <div>
-                <div align='center'>
-                    <Iframe url="https://embed.radio.co/player/15a1a96.html" id="iframe" title="JEMP Radio" width="450px"
-                        allow="autoplay" frameBorder='0' />
-                </div>
+                <Container>
+                    <Row>
+                        <Col >
+                            {/* <img src={this.state.img} className='float-left' id='mainImg' /> */}
+                            <Iframe url="https://embed.radio.co/player/15a1a96.html" id="iframe" title="JEMP Radio"
+                                allow="autoplay" frameBorder='0' align='center'  />
+                        </Col>
+                    </Row>
+                </Container>
+
             </div>
 
         )

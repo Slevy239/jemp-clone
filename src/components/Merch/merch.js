@@ -1,26 +1,36 @@
 import React, { Component } from 'react';
 // import Display from '../components/display/display'
 import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Card'
-
+import Button from 'react-bootstrap/Button'
+import './merchData'
+import MerchData from './merchData';
+import Pagination from '@material-ui/lab/Pagination';
 class Merch extends Component {
     componentDidMount() {
+        window.scrollTo(0, 0)
     }
-    render() {
 
+    render() {
+        console.log('hi')
         return (
             <div>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
-                    <Card.Body>
-                        <Card.Title>Card Title</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-    </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
+                {MerchData.items.map((old, index) => {
+                    return (
+
+                        <Card key={index} divider='true'>
+                            <Card.Img variant='top' src={old.img} />
+                            <Card.Body>
+                                <Card.Title>{old.name}</Card.Title>
+                                <Card.Text>{old.price}</Card.Text>
+                                <Button variant='primary'>Purchase</Button>
+                            </Card.Body>
+                        </Card>
+                    )
+                })}
+                <div className='center'>
+
+                    <Pagination />
+                </div>
             </div>
 
         )
