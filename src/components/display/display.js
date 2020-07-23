@@ -7,9 +7,6 @@ class Display extends Component {
         songData: [],
         current: [],
         past: [],
-        pages: 0,
-        firstTen: [],
-        secondTen: []
     }
     componentDidMount() {
         window.scrollTo(0, 0)
