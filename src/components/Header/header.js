@@ -21,7 +21,7 @@ class Header extends Component {
                             style,
                         }) => (
                                 <h1 style={style}>
-                                    Jemp Radio
+                                    Jemp Radio Clone
                                 </h1>
                             )}
                     </Sticky>

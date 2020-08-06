@@ -111,7 +111,7 @@ export default function PersistentDrawerLeft() {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h4" noWrap>
-                        JEMP Radio
+                        JEMP Radio Clone
                      </Typography>
                 </Toolbar>
             </AppBar>

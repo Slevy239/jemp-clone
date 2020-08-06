@@ -1,5 +1,9 @@
+
+
 .App {
   text-align: center;
+  background-image: url(https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-color: black;
 }
 
 .App-logo {
@@ -88,7 +92,24 @@ img.card-img-top {
   width: auto;
 }
 #displayhistory {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   font-size: 50px;
 }
 
+div#paper {
+  /* max-width: 50%; */
+  margin-left: 20%;
+  margin-right: 20%;
+}
+a:hover {
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  background-color: black;
+  color: white;
+  margin-bottom: -35px;
+}

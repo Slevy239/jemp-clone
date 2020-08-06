@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Pagination from '@material-ui/lab/Pagination';
-import PaginationItem from '@material-ui/lab/PaginationItem';
+import Paper from '@material-ui/core/Paper';
+import Card from "@material-ui/core/Card";
+
 class Display extends Component {
     state = {
         songData: [],
@@ -26,19 +27,25 @@ class Display extends Component {
         return (
 
             <div id='displayBoarder'>
-                <h1 id='displayhistory'>Recent Songs</h1>
-                {/* <div className='container'> */}
-                {this.state.past.slice(0, 10).map((old, index) => {
-                    return (
+                <Paper id='paper'>
+                    <Card>
+                        <h1 id='displayhistory'>Recent Songs</h1>
+                    </Card>
+                    {/* <div className='container'> */}
+                    {this.state.past.slice(0, 10).map((old, index) => {
+                        return (
+                            <Paper id='songTitle' elevation={2}>
 
-                        <p key={index} divider='true'>
-                            <a href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
-                        </p>
-                    )
-                })}
-                {/* </div> */}
-                <div className='container'>
-                </div>
+                                <p key={index} divider='true'>
+                                    <a href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
+                                </p>
+                            </Paper>
+                        )
+                    })}
+                    {/* </div> */}
+                    <div className='container'>
+                    </div>
+                </Paper>
             </div>
 
         )
