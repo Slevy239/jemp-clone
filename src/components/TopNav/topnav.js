@@ -130,7 +130,7 @@ export default function PersistentDrawerLeft() {
                     </IconButton>
                 </div>
                 <List>
-                <IconButton
+                    <IconButton
                         color="inherit"
                         aria-label="GitHub Profile"
                         href='https://github.com/Slevy239'
@@ -161,9 +161,12 @@ export default function PersistentDrawerLeft() {
 
                 </List>
                 <Divider />
-                <Typography variant='h6'>
-                    Build With React
+                <div id='cointainer'>
+
+                    <Typography variant='h6' id='menuFoot'>
+                        Built With React
                 </Typography>
+                </div>
             </Drawer>
             <main
                 className={clsx(classes.content, {

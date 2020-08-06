@@ -25,8 +25,8 @@ class Display extends Component {
 
         return (
 
-            <div>
-                <h4>Recent Songs</h4>
+            <div id='displayBoarder'>
+                <h1 id='displayhistory'>Recent Songs</h1>
                 {/* <div className='container'> */}
                 {this.state.past.slice(0, 10).map((old, index) => {
                     return (
