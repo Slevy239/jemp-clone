@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Paper from '@material-ui/core/Paper';
 import Card from "@material-ui/core/Card";
-
+import './display.css';
 class Display extends Component {
     state = {
         songData: [],

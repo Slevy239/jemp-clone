@@ -20,7 +20,7 @@ class Home extends Component {
                 <Jemp />
                 <Display />
                 {/* <Tabs /> */}
-                <Footer />
+                {/* <Footer /> */}
             </div>
 
         )

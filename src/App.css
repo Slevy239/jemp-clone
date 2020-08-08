@@ -86,30 +86,18 @@ img.card-img-top {
   bottom: 0;
   left: 20%;
 }
-#displayBoarder {
-  border: 1px solid;
-  margin-top: 5%;
-  width: auto;
-}
-#displayhistory {
-  font-family: "Sora", sans-serif;
-  font-size: 50px;
-}
 
-div#paper {
-  /* max-width: 50%; */
-  margin-left: 20%;
-  margin-right: 20%;
-}
-a:hover {
-  color: red;
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-.footer {
+/* .footer {
   background-color: black;
   color: white;
   margin-bottom: -35px;
+} */
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-wrap {
+  flex: 1;
 }
