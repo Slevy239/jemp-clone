@@ -3,6 +3,12 @@ import axios from 'axios';
 import Paper from '@material-ui/core/Paper';
 import Card from "@material-ui/core/Card";
 import './display.css';
+import Table from '@material-ui/core/Table';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+
 class Display extends Component {
     state = {
         songData: [],
@@ -31,18 +37,23 @@ class Display extends Component {
                     <Card>
                         <h1 id='displayhistory'>Recent Songs</h1>
                     </Card>
-                    {/* <div className='container'> */}
-                    {this.state.past.slice(0, 10).map((old, index) => {
-                        return (
-                            <Paper id='songTitle' elevation={2}>
+                    <TableContainer>
+                        <Table>
+                            <TableHead>
+                                    {this.state.past.slice(0, 10).map((old, index) => {
+                                        return (
+                                            <TableRow>
 
-                                <p key={index} divider='true'>
-                                    <a href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
-                                </p>
-                            </Paper>
-                        )
-                    })}
-                    {/* </div> */}
+                                                    <p key={index} divider='true'>
+                                                        <a href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
+                                                    </p>
+                                            </TableRow>
+                                        )
+                                    })}
+
+                            </TableHead>
+                        </Table>
+                    </TableContainer>
                     <div className='container'>
                     </div>
                 </Paper>

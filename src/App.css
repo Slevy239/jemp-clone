@@ -4,6 +4,8 @@
   text-align: center;
   background-image: url(https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-color: black;
+  width: 100%;
+  height: auto;
 }
 
 .App-logo {
