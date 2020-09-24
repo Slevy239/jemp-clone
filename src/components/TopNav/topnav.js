@@ -18,7 +18,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-
+import './topnav.css'
 
 
 const drawerWidth = 240;
@@ -131,6 +131,7 @@ export default function PersistentDrawerLeft() {
                 </div>
                 <List>
                     <IconButton
+                        size="large"
                         color="inherit"
                         aria-label="GitHub Profile"
                         href='https://github.com/Slevy239'
@@ -154,7 +155,7 @@ export default function PersistentDrawerLeft() {
                     <IconButton
                         color="inherit"
                         aria-label="Email"
-                        href='mailto: slevy239@gmail.com'
+                        href='mailto:slevy239@gmail.com'
                     >
                         <EmailIcon />
                     </IconButton>

@@ -36,20 +36,23 @@ class Display extends Component {
                 <Paper id='paper'>
                     <Card>
                         <h1 id='displayhistory'>Recent Songs</h1>
+                        <h3>Click the Song to find out more!</h3>
+
                     </Card>
                     <TableContainer>
                         <Table>
                             <TableHead>
-                                    {this.state.past.slice(0, 10).map((old, index) => {
-                                        return (
-                                            <TableRow>
-
-                                                    <p key={index} divider='true'>
-                                                        <a href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
-                                                    </p>
-                                            </TableRow>
-                                        )
-                                    })}
+                                {this.state.past.slice(0, 10).map((old, index) => {
+                                    return (
+                                        <TableRow>
+                                            <TableCell>
+                                                <p key={index} divider='true'>
+                                                    <a target="_blank" rel="noopener noreferrer" href={'http://www.google.com/search?q=' + old.title}>{index + 1}.{old.title}</a>
+                                                </p>
+                                            </TableCell>
+                                        </TableRow>
+                                    )
+                                })}
 
                             </TableHead>
                         </Table>
