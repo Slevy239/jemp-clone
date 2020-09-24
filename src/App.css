@@ -1,11 +1,14 @@
-
-
 .App {
   text-align: center;
-  background-image: url(https://images.pexels.com/photos/755726/pexels-photo-755726.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://big.assets.huffingtonpost.com/tumblr_myuxk2c6vc1qzt4vjo1_r2_500.gif);
+  background-position: center;
+  background-size: cover;
   background-color: black;
   width: 100%;
   height: auto;
+}
+body {
+  height: 100%;
 }
 
 .App-logo {
